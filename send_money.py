@@ -1,5 +1,3 @@
-
-
 import logging # This module is thread safe.
 import time
 import os, sys, csv
