@@ -7,7 +7,7 @@ import ast
 import random
 import config
 
-
+""" """
 def list_load(listfile: object) -> object:
     with open(listfile, 'r') as readstuff:
         listvar = []
