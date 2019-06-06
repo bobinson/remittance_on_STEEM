@@ -38,10 +38,13 @@ if __name__ == '__main__':
             stat = send_cash(config.amount)
         except TypeError as te:
             stat = te.args[0]
+
             if te.args[0] == "'NoneType' object is not iterable":
                 pass
+                
         except Exception as e:
             logging.error(repr(e))
+
         if stat != "ERR0R1":
             logging.info(stat)
             if stat['operations']:
