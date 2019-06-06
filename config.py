@@ -4,10 +4,7 @@ from send_money import list_load
 import logging.config
 
 
-
 PRODUCTION = True
-
-
 
 
 logging.config.fileConfig('logging.conf')
@@ -19,8 +16,7 @@ STEEM blockchain
 '''
 
 
-STEEM_NODES = ['https://steemd.privex.io','https://gtg.steem.house:8090','https://rpc.buildteam.io', 'https://steemd.minnowsupportproject.org', 'https://rpc.buildteam.io',
-               'https://api.steemit.com']
+STEEM_NODES = ['https://steemd.privex.io', 'https://rpc.buildteam.io','https://api.steemit.com']
 
 active_key = list_load("active_wif.txt")
 account = list_load("accounts.txt")
@@ -36,7 +32,6 @@ CURRENCY = ctype[0]
 print(CURRENCY)
 
 WIF = active_key[0]
-
 
 
 # posting, active - fortunex
