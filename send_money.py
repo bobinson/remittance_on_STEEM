@@ -1,12 +1,8 @@
-from steem.steem import Steem
 
 
 import logging # This module is thread safe.
-from steem.post import Post
-from datetime import datetime
 import time
 import os, sys, csv
-import inspect
 from datetime import date, timedelta
 import steem
 import ast
@@ -42,12 +38,12 @@ if __name__ == '__main__':
     while True:
         try:
             stat = send_cash(config.amount)
-        except Exception as e:
-            logging.error(repr(e))
         except TypeError as te:
             stat = te.args[0]
             if te.args[0] == "'NoneType' object is not iterable":
                 pass
+        except Exception as e:
+            logging.error(repr(e))
         if stat != "ERR0R1":
             logging.info(stat)
             if stat['operations']:
