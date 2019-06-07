@@ -22,7 +22,6 @@ def list_load(listfile: object) -> object:
         for rows in reader:
             v = rows[0]
             listvar.append(v)
-
     return listvar
 
 

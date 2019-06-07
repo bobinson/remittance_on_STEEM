@@ -6,7 +6,6 @@ import logging.config
 
 PRODUCTION = True
 
-
 logging.config.fileConfig('logging.conf')
 logging.basicConfig(filename='1ogs.txt',level=logging.DEBUG)
 
