@@ -6,7 +6,7 @@ active_wif.txt - mention active wif to send momey
 
 amounts.txt - mention STEEM/SBD amount in 1.00, 0.001 format
 
-TODO:
+**TODO:**
 
 Error handling is primitive. Need to make it robust
 

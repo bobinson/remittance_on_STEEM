@@ -1,9 +1,9 @@
 import logging # This module is thread safe.
 import csv
 import config
-import time, os, sys
 
 """
+import time, os, sys
 from datetime import date, timedelta
 import steem
 import ast
@@ -11,9 +11,6 @@ import random
 """
 
 
-
-
-""" """
 def list_load(listfile: object) -> object:
     with open(listfile, 'r') as readstuff:
         listvar = []
@@ -33,7 +30,6 @@ def send_cash(amount):
         stat = config.STEEM_INSTANCE.transfer(config.to_ACCOUNT, amount, "SBD", memo="mb", account=config.frm_ACCOUNT)
 
     return stat
-
 
 
 if __name__ == '__main__':
